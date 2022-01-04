@@ -1,0 +1,182 @@
+
+main {
+    font-family: Barlow Semi Condensed;
+}
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(2);
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 5%;
+}
+.testimonials-box-1 {
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 5px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    grid-column: 1 /span 2;
+    grid-row: 1;
+    width: 450px;
+    height: 250px;
+}
+.testimonials-box-2 {
+    background-color:  hsl(217, 19%, 35%);
+    border-radius: 5px;
+    grid-column: 3;
+    grid-row: 1;
+    width: 200px;
+    height: 250px;
+
+}
+.testimonials-box-3 {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    box-shadow: 20px 20px 70px 10px hsl(0, 0%, 81%);
+    grid-column: 1;
+    grid-row: 2;
+    width: 200px;
+    height: 250px;
+}
+.testimonials-box-4 {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 5px;
+    grid-column: 2 /span 3;
+    grid-row: 2;
+    width: 450px;
+    height: 250px;
+}
+.testimonials-box-5 {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    box-shadow: 20px 20px 70px 10px hsl(0, 0%, 81%);
+    grid-column: 4;
+    grid-row: 1 /span 2;
+    width: 200px;
+    height: 530px;
+}
+
+.name-status-box {
+    margin: 20px;
+    position: relative;
+    border: 1px solid white;
+}
+
+img {
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 81%);
+    margin: 20px;
+}
+
+.text-box { 
+    position: relative;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0 20px 70px;
+}
+
+.text-box p {
+    margin: 0;
+}
+
+.testimonials-box-1 p:nth-child(1), .testimonials-box-2 p:nth-child(1), .testimonials-box-4 p:nth-child(1) {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.testimonials-box-1 p:nth-child(2), .testimonials-box-2 p:nth-child(2), .testimonials-box-4 p:nth-child(2) {
+    color: hsl(0, 0%, 100%, 50%);
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.testimonials-box-1 p:nth-child(3), .testimonials-box-2 p:nth-child(3), .testimonials-box-4 p:nth-child(3) {
+    color: white;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.testimonials-box-1 p:nth-child(4), .testimonials-box-2 p:nth-child(4), .testimonials-box-4 p:nth-child(4) {
+    color: hsl(0, 0%, 100%, 50%);
+    font-weight: 300;
+    font-size: 12px;
+    margin: 20px;
+}
+
+.testimonials-box-3 p:nth-child(1), .testimonials-box-5 p:nth-child(1){
+    color: hsl(209, 53%, 27%);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.testimonials-box-3 p:nth-child(2), .testimonials-box-5 p:nth-child(2) {
+    color: hsl(0, 0%, 81%);
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.testimonials-box-3 p:nth-child(3), .testimonials-box-5 p:nth-child(3) {
+    color:hsl(209, 53%, 27%);
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.testimonials-box-3 p:nth-child(4), .testimonials-box-5 p:nth-child(4) {
+    color: hsl(0, 0%, 50%);
+    font-weight: 300;
+    font-size: 12px;
+    margin: 20px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 600px) {
+    .grid-box {
+        display: grid;
+        grid-template-columns: repeat(1);
+        grid-template-rows: repeat(7);
+        grid-gap: 10px;
+    }
+
+    .testimonials-box-1 {
+        grid-column: 1;
+        grid-row: 1;
+        width: 250px;
+        height: 380px;
+    }
+    .testimonials-box-2 {
+        grid-column: 1;
+        grid-row: 3;
+        width: 250px;
+        height: 250px;
+    }
+    .testimonials-box-3 {
+        grid-column: 1;
+        grid-row: 4;
+        width: 250px;
+        height: 250px;
+    }
+    .testimonials-box-4 {
+        grid-column: 1;
+        grid-row: 5;
+        width: 250px;
+        height: 350px;
+    }
+    .testimonials-box-5 {
+        grid-column: 1;
+        grid-row: 7;
+        width: 250px;
+        height: 450px;
+    }
+}
