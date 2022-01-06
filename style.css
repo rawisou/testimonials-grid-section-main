@@ -1,6 +1,10 @@
 
 main {
     font-family: Barlow Semi Condensed;
+    
+}
+body {
+    background-color: rgb(195, 210, 223);
 }
 .grid-box {
     display: grid;
@@ -19,7 +23,7 @@ main {
     grid-column: 1 /span 2;
     grid-row: 1;
     width: 450px;
-    height: 250px;
+    height: 280px;
 }
 .testimonials-box-2 {
     background-color:  hsl(217, 19%, 35%);
@@ -27,17 +31,17 @@ main {
     grid-column: 3;
     grid-row: 1;
     width: 200px;
-    height: 250px;
+    height: 280px;
 
 }
 .testimonials-box-3 {
     background-color: hsl(0, 0%, 100%);
     border-radius: 5px;
-    box-shadow: 20px 20px 70px 10px hsl(0, 0%, 81%);
+    box-shadow: 20px 20px 70px 10px hsl(207, 23%, 82%);
     grid-column: 1;
     grid-row: 2;
     width: 200px;
-    height: 250px;
+    height: 280px;
 }
 .testimonials-box-4 {
     background-color: hsl(219, 29%, 14%);
@@ -45,16 +49,16 @@ main {
     grid-column: 2 /span 3;
     grid-row: 2;
     width: 450px;
-    height: 250px;
+    height: 280px;
 }
 .testimonials-box-5 {
     background-color: hsl(0, 0%, 100%);
     border-radius: 5px;
-    box-shadow: 20px 20px 70px 10px hsl(0, 0%, 81%);
+    box-shadow: 20px 20px 70px 10px hsl(207, 23%, 82%);
     grid-column: 4;
     grid-row: 1 /span 2;
     width: 200px;
-    height: 530px;
+    height: 580px;
 }
 
 .name-status-box {
@@ -97,13 +101,14 @@ img {
 .testimonials-box-1 p:nth-child(3), .testimonials-box-2 p:nth-child(3), .testimonials-box-4 p:nth-child(3) {
     color: white;
     font-weight: 600;
+    font-size: 15px;
     margin: 20px;
 }
 
 .testimonials-box-1 p:nth-child(4), .testimonials-box-2 p:nth-child(4), .testimonials-box-4 p:nth-child(4) {
     color: hsl(0, 0%, 100%, 50%);
     font-weight: 300;
-    font-size: 12px;
+    font-size: 15px;
     margin: 20px;
 }
 
@@ -129,7 +134,7 @@ img {
 .testimonials-box-3 p:nth-child(4), .testimonials-box-5 p:nth-child(4) {
     color: hsl(0, 0%, 50%);
     font-weight: 300;
-    font-size: 12px;
+    font-size: 13px;
     margin: 20px;
 }
 
@@ -141,7 +146,7 @@ img {
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .grid-box {
         display: grid;
         grid-template-columns: repeat(1);
@@ -153,7 +158,7 @@ img {
         grid-column: 1;
         grid-row: 1;
         width: 250px;
-        height: 380px;
+        height: 450px;
     }
     .testimonials-box-2 {
         grid-column: 1;
@@ -171,12 +176,12 @@ img {
         grid-column: 1;
         grid-row: 5;
         width: 250px;
-        height: 350px;
+        height: 450px;
     }
     .testimonials-box-5 {
         grid-column: 1;
         grid-row: 7;
         width: 250px;
-        height: 450px;
+        height: 500px;
     }
 }
